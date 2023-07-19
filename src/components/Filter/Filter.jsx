@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import { filterAction } from 'redux/filterSlice';
-import { selectFilter } from 'redux/selectors';
+import { filterAction } from 'redux/contacts/filterSlice';
+import { selectFilter } from 'redux/contacts/selectors';
 import c from './Filter.module.css';
 
 export const Filter = () => {
