@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
-import { HomePage } from 'pages/Home';
-import { LoginPage } from 'pages/Login';
-import { RegisterPage } from 'pages/Register';
-import { ContactsPage } from 'pages/Contacts';
+import { HomePage } from 'pages/HomePage';
+import { LoginPage } from 'pages/LoginPage';
+import { RegisterPage } from 'pages/RegisterPage';
+import { ContactsPage } from 'pages/ContactsPage';
 // import React, { useEffect } from 'react';
 // import { ContactForm } from './ContactForm/ContactForm';
 // import { Filter } from './Filter/Filter';
