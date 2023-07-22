@@ -25,7 +25,7 @@ export const RegisterForm = () => {
         <input
           className={c.label}
           type="text"
-          name="username"
+          name="name"
           placeholder="Enter user name"
         />
       </label>
