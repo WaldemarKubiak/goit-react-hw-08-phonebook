@@ -22,7 +22,7 @@ export const ContactList = () => {
           return (
             <li className={c.contactListItem} key={contact.id}>
               <p>{contact.name}</p>
-              <p>{contact.phone}</p>
+              <p>{contact.number}</p>
               <button
                 className={c.contactListBtn}
                 key={contact.id}

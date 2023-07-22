@@ -1,6 +1,7 @@
 import { login, logout, refreshUser, register } from './authOperations';
 
-const { createSlice } = require('@reduxjs/toolkit');
+// const { createSlice } = require('@reduxjs/toolkit');
+import { createSlice } from '@reduxjs/toolkit';
 
 const handleFulfilled = (state, action) => {
   state.user = action.payload.user;

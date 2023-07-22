@@ -5,11 +5,11 @@ import c from './UserMenu.module.css';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
-  const { user } = useAuth;
+  const { user } = useAuth();
 
   return (
     <div className={c.wrapper}>
-      <p className={c.username}>Walcome, {user.name}!</p>
+      <p className={c.username}>Welcome, {user.name}!</p>
       <button
         className={c.btnLogin}
         type="button"

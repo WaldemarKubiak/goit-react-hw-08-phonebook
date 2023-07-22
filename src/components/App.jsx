@@ -7,18 +7,8 @@ import { refreshUser } from 'redux/auth/authOperations';
 import { Loader } from './Loader/Loader';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
-// import { HomePage } from 'pages/HomePage';
-// import { LoginPage } from 'pages/LoginPage';
-// import { RegisterPage } from 'pages/RegisterPage';
-// import { ContactsPage } from 'pages/ContactsPage';
-// import React, { useEffect } from 'react';
-// import { ContactForm } from './ContactForm/ContactForm';
-// import { Filter } from './Filter/Filter';
-// import { ContactList } from './ContactList/ContactList';
-// import { selectError, selectIsLoading } from 'redux/contacts/selectors';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { fetchContacts } from 'redux/contacts/operations';
-// import { Loader } from './Loader/Loader';
+import c from './App.module.css';
+
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
@@ -36,35 +26,37 @@ export const App = () => {
   return isRefreshing ? (
     <Loader />
   ) : (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        {/* <Route path="login" element={<LoginPage />} />
-        <Route path="register" element={<RegisterPage />} />
-        <Route path="contacts" element={<ContactsPage />} /> */}
-        <Route
-          path="/register"
-          element={
-            <RestrictedRoute
-              redirectTo="/contacts"
-              component={<RegisterPage />}
-            />
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
-          }
-        />
-        <Route
-          path="/contacts"
-          element={
-            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
-          }
-        />
-      </Route>
-    </Routes>
+    <div className={c.container}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route
+            path="/register"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<RegisterPage />}
+              />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <RestrictedRoute
+                redirectTo="/contacts"
+                component={<LoginPage />}
+              />
+            }
+          />
+          <Route
+            path="/contacts"
+            element={
+              <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
+            }
+          />
+        </Route>
+      </Routes>
+    </div>
   );
 };
 
