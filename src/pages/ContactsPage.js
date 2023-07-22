@@ -2,11 +2,10 @@ import { Helmet } from 'react-helmet';
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { ContactList } from '../components/ContactList/ContactList';
 import { Filter } from '../components/Filter/Filter';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { selectIsLoading } from 'redux/contacts/selectors';
 
 const ContactsPage = () => {
-  // const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   return (
     <div>
