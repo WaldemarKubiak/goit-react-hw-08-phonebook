@@ -13,10 +13,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-
-//===Test data===
-/*
-Username: Mango
-email: mango@mail.com
-password: mango123
-*/

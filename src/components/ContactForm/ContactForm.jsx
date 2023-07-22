@@ -50,6 +50,7 @@ export const ContactForm = () => {
 
   return (
     <form className={c.contactAddForm} onSubmit={handleOnSubmit}>
+      
       <label className={c.contactAddLabel}>
         Name
         <input

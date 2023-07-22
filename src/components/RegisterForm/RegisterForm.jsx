@@ -23,7 +23,7 @@ export const RegisterForm = () => {
       <label className={c.label}>
         UserName
         <input
-          className={c.label}
+          className={c.label__input}
           type="text"
           name="name"
           placeholder="Enter user name"
@@ -32,7 +32,7 @@ export const RegisterForm = () => {
       <label className={c.label}>
         Email
         <input
-          className={c.label}
+          className={c.label__input}
           type="email"
           name="email"
           placeholder="Enter e-mail"
@@ -41,7 +41,7 @@ export const RegisterForm = () => {
       <label className={c.label}>
         Password
         <input
-          className={c.label}
+          className={c.label__input}
           type="password"
           name="password"
           placeholder="Enter password"

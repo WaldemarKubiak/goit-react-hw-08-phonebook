@@ -22,7 +22,7 @@ export const LoginForm = () => {
       <label className={c.label}>
         Email
         <input
-          className={c.label}
+          className={c.label__input}
           type="email"
           name="email"
           placeholder="Enter e-mail"
@@ -31,14 +31,14 @@ export const LoginForm = () => {
       <label className={c.label}>
         Password
         <input
-          className={c.label}
+          className={c.label__input}
           type="password"
           name="password"
           placeholder="Enter password"
         />
       </label>
       <button className={c.formBtn} type="submit">
-        Login
+        Log In
       </button>
     </form>
   );

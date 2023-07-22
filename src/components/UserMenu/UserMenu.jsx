@@ -9,7 +9,9 @@ export const UserMenu = () => {
 
   return (
     <div className={c.wrapper}>
-      <p className={c.username}>Welcome, {user.name}!</p>
+      <p className={c.username}>
+        Welcome, <span className={c.logInUser}>{user.name}!</span>
+      </p>
       <button
         className={c.btnLogin}
         type="button"

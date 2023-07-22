@@ -29,14 +29,3 @@ const ContactsPage = () => {
 };
 
 export default ContactsPage;
-
-// <div className="container">
-//     //   <h1>Phonebook</h1>
-//     //   <ContactForm />
-//     //   <h2>Contacts</h2>
-//     //   <Filter />
-//     {
-//       /* {isLoading && !error && <Loader />} */
-//     }
-//     //   <ContactList />
-//     // </div>

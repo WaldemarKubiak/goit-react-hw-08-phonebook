@@ -4,11 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  /* position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  margin-top: 120px;
 }
 
 .title {

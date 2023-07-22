@@ -5,7 +5,7 @@
   width: 500px;
   border-radius: 10px;
   background-color: #d3d3d3;
-  margin: 30px 5px;
+  margin: 30px auto 5px auto;
 }
 
 .contactAddLabel {
@@ -36,7 +36,7 @@
 .contactAddBtn {
   margin: 20px auto;
   width: 270px;
-  background-color: #81aee2;
+  background-color: #1c4672;
   border: none;
   color: white;
   height: 40px;
@@ -50,8 +50,10 @@
 }
 
 .contactAddBtn:hover {
-  background-color: #556b2f;
+  background-color: #81aee2;
   cursor: pointer;
-  color: #81aee2;
+  color: #ff6347;
   transition: 250ms;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(116, 113, 113),
+    -0.5rem -0.5rem 2rem rgb(116, 113, 113);
 }
